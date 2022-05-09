@@ -1,0 +1,29 @@
+{
+	"classmate":{
+		"mate_id": 2014031279,
+		"mate_names": "Noel Adán",
+		"mate_ape_pat": "Sánchez",
+		"mate_ape_mat": "Sánchez",
+		"mate_sex":{
+			"sex_id": 1,
+			"sex_desc": "Masculino"
+		},
+		"mate_contact":{
+			"con_id": 1,
+			"con_tel": "+52 55-9004-5354",
+			"con_landline": "+52 56-2142-8101",
+			"con_email":{
+				"ema_subject": "nsanchezr1301@alumno.ipn.mx"
+			}
+		},
+		"mate_user": {
+			"user_id": 0,
+			"user_name": "nsanchezr1301",
+			"user_pass": "Paramore11!*"
+		},
+		"mate_area": {
+			"area_id": 1,
+			"area_name": "Telemática"
+		}
+    }
+}
