@@ -10,7 +10,7 @@ from email.mime.text import MIMEText
 
 class Email(EmailAction):
     __subject: string
-    __issuer: string = "no-reply@sgied.com.mx"
+    __issuer: string = "correo"
 
     def __init__(self, subject: string):
         self.__subject = subject
@@ -23,14 +23,14 @@ class Email(EmailAction):
         import smtplib
         to = self.__subject
         user = self.__issuer  # your secureserver mail_id(godaddy)
-        pwd = 'Paramore11!*25'
+        pwd = 'Contra'
         msg = EmailMessage()
         msg['To'] = to
         msg['From'] = user
         msg['Subject'] = "Testing"
         payloads: [] = [Message().attach("Thank you")]
         msg.set_payload(payloads)
-        smtp_server = smtplib.SMTP("smtpout.asia.secureserver.net", 80)
+        smtp_server = smtplib.SMTP("smtp", 80)
         smtp_server.ehlo()
         smtp_server.login(user, pwd)
         smtp_server.sendmail(user, to, msg)
