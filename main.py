@@ -8,7 +8,7 @@ import json
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    file = open('E:\\Noel\\Escuela\\UPIITA\\ProyectoTT\\PycharmProjects\\pythonProject1\\Json_New_Account.json')
+    file = open('~\\Json_New_Account.json')
     us = json.load(file)
     class_mate: ClassMate = ClassMate(us["classmate"])
     stamper: Stamper = Stamper(class_mate, 10, 0)
